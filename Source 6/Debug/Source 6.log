@@ -1,0 +1,5 @@
+﻿  Source 6.cpp
+  weapon.cpp
+C:\Users\Admin\source\repos\Source 6\weapon.cpp(77,20): warning C4101: e: неиспользованная локальная переменная
+  Создание кода...
+  Source 6.vcxproj -> C:\Users\Admin\source\repos\Source 6\Debug\Source 6.exe
