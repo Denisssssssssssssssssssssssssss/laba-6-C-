@@ -18,8 +18,8 @@ weapon::weapon(int allfields) {
 	}
 	else {
 		cout << "Было введено недопустимое значение allfields (allfields < 0)." << endl;
-		weapon weap;
-		*this = weap;
+		wepcost = 20;
+		weptitle = " - ";
 	}
 }
 
@@ -75,7 +75,12 @@ void weapon::getfromfile(ifstream& file, string filename) {
 		}
 	}
 	catch (exception& e) {
-			throw exception("В файле недостаточно данных для записи или неверно указано имя файла.\n");
+		throw exception("В файле недостаточно данных для записи или неверно указано имя файла.\n");
+	}
+}
+	ostream& operator<< (ostream & out, weapon& weapon1) {
+		out << "wepcost :" << weapon1.wepcost;
+		out << "weptitle: " << weapon1.weptitle;
+		return out;
 	}
 
-}

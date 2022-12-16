@@ -14,7 +14,7 @@ employee::employee() {
 	equipment equip;
 	jobtitle jtitle;
 	transport tran;
-	weapon weap;
+	weapon *weap;
 	this->jtitle = jtitle;
 	this->equip = equip;
 	this->tran = tran;

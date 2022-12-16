@@ -35,6 +35,8 @@ public:
 		weapon::operator=(fire);
 		return *this;
 	}
+	void tofile(ofstream& file, string filename) override {
+	}
 	//перегрузка оператора <<
 	ostream& operator<< (ostream& out) {
 		weapon s = *this;
